@@ -1,0 +1,14 @@
+---
+- name: Check if Kafka is running
+  shell: ps ax | grep kafka | grep -v grep
+  ignore_errors: yes
+  changed_when: false
+  register: service_status
+
+- name: Report status of Kafka
+  fail:
+    msg: |
+      Service Kafka is not running!
+      Return code from `grep`:
+      {{ service_status.rc }}
+  when: service_status.rc != 0

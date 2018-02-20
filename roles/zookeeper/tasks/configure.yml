@@ -1,0 +1,10 @@
+---
+- name: deliver configuration
+  template: src="{{ item }}.j2"
+          dest="{{ apache.zookeeper.home }}/conf/{{ item }}"
+          owner="{{ apache.zookeeper.owner }}"
+          group="{{ apache.zookeeper.owner }}"
+          mode=0644
+  with_items:
+#        - zoo.cfg.properties
+        - zoo.cfg

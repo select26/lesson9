@@ -1,0 +1,30 @@
+---
+- name: deliver configuration zookeeper
+  template: src="{{ item }}.j2"
+          dest="{{ apache.zookeeper.home }}/conf/{{ item }}"
+          owner="{{ apache.zookeeper.owner }}"
+          group="{{ apache.zookeeper.owner }}"
+          mode=0644
+  with_items:
+        - zoo.cfg
+
+- name: configuring kafka
+  lineinfile: 
+    dest: /opt/kafka_2.11-1.0.0/bin/{{ item.dest }}
+    regexp: "{{ item.regexp }}"
+    line: "{{ item.line }}"
+    state: present
+    backup: yes
+  with_items:
+    - { dest: 'kafka-server-start.sh', regexp: '^    export KAFKA_HEAP_OPTS="-Xmx1G -Xms1G"', line: '    export KAFKA_HEAP_OPTS="-Xmx256m -Xms256m"' }
+    - { dest: 'kafka-run-class.sh', regexp: '^  KAFKA_HEAP_OPTS="-Xmx256M"', line: '  KAFKA_HEAP_OPTS="-Xmx128M"' }
+
+- name: restarting service ZooKeeper
+  service:
+    name: zookeeper
+    state: restarted
+
+- name: restarting service Kafka
+  service:
+    name: kafka
+    state: restarted

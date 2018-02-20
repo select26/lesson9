@@ -1,0 +1,16 @@
+---
+
+  service:
+   kafka:
+    repositories:
+     kafka:
+       url: "http://{{repo.user}}:{{repo.password}}@traineeship-repository.dev.thumbtack.net:8081/nexus/content/repositories/{{repo.name}}/"
+       description: "traineeship-repository"
+
+    prerequisites:
+      - java-1.8.0-openjdk
+      - zookeeper
+    packages:
+#      - zookeeper-{{ zookeeper.version }}*
+#      - zookeeper*
+      - kafka.noarch

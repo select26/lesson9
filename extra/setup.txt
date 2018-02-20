@@ -1,0 +1,182 @@
+rt4 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_apparmor": {
+            "status": "disabled"
+        }, 
+        "ansible_architecture": "x86_64", 
+        "ansible_cmdline": {
+            "quiet": true
+        }, 
+        "ansible_date_time": {
+            "date": "2018-02-20", 
+            "day": "20", 
+            "epoch": "1519106139", 
+            "hour": "11", 
+            "iso8601": "2018-02-20T05:55:39Z", 
+            "iso8601_basic": "20180220T115539895590", 
+            "iso8601_basic_short": "20180220T115539", 
+            "iso8601_micro": "2018-02-20T05:55:39.895736Z", 
+            "minute": "55", 
+            "month": "02", 
+            "second": "39", 
+            "time": "11:55:39", 
+            "tz": "+06", 
+            "tz_offset": "+0600", 
+            "weekday": "Вторник", 
+            "weekday_number": "2", 
+            "weeknumber": "08", 
+            "year": "2018"
+        }, 
+        "ansible_distribution": "CentOS", 
+        "ansible_distribution_file_parsed": true, 
+        "ansible_distribution_file_path": "/etc/redhat-release", 
+        "ansible_distribution_file_variety": "RedHat", 
+        "ansible_distribution_major_version": "7", 
+        "ansible_distribution_release": "Core", 
+        "ansible_distribution_version": "7.4.1708", 
+        "ansible_dns": {
+            "nameservers": [
+                "212.24.109.143", 
+                "212.24.105.143"
+            ], 
+            "options": {
+                "rotate": true
+            }, 
+            "search": [
+                "."
+            ]
+        }, 
+        "ansible_domain": "chertkov.info", 
+        "ansible_effective_group_id": 1000, 
+        "ansible_effective_user_id": 1000, 
+        "ansible_env": {
+            "HOME": "/home/select", 
+            "LANG": "ru_RU.UTF-8", 
+            "LC_ADDRESS": "ru_RU.UTF-8", 
+            "LC_IDENTIFICATION": "ru_RU.UTF-8", 
+            "LC_MEASUREMENT": "ru_RU.UTF-8", 
+            "LC_MONETARY": "ru_RU.UTF-8", 
+            "LC_NAME": "ru_RU.UTF-8", 
+            "LC_NUMERIC": "ru_RU.UTF-8", 
+            "LC_PAPER": "ru_RU.UTF-8", 
+            "LC_TELEPHONE": "ru_RU.UTF-8", 
+            "LC_TIME": "ru_RU.UTF-8", 
+            "LESSOPEN": "||/usr/bin/lesspipe.sh %s", 
+            "LOGNAME": "select", 
+            "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:", 
+            "MAIL": "/var/mail/select", 
+            "PATH": "/usr/local/bin:/usr/bin", 
+            "PWD": "/home/select", 
+            "SHELL": "/bin/bash", 
+            "SHLVL": "2", 
+            "SSH_CLIENT": "127.0.0.1 60562 22", 
+            "SSH_CONNECTION": "127.0.0.1 60562 127.0.0.1 22", 
+            "SSH_TTY": "/dev/pts/6", 
+            "TERM": "xterm", 
+            "USER": "select", 
+            "XDG_RUNTIME_DIR": "/run/user/1000", 
+            "XDG_SESSION_ID": "4619923", 
+            "_": "/usr/bin/python"
+        }, 
+        "ansible_fips": false, 
+        "ansible_fqdn": "rt4.chertkov.info", 
+        "ansible_hostname": "rt4", 
+        "ansible_kernel": "2.6.32-042stab127.2", 
+        "ansible_local": {}, 
+        "ansible_lsb": {}, 
+        "ansible_machine": "x86_64", 
+        "ansible_machine_id": "a1c5c47a2580487997b914faaa928c78", 
+        "ansible_nodename": "rt4.chertkov.info", 
+        "ansible_os_family": "RedHat", 
+        "ansible_pkg_mgr": "yum", 
+        "ansible_python": {
+            "executable": "/usr/bin/python", 
+            "has_sslcontext": true, 
+            "type": "CPython", 
+            "version": {
+                "major": 2, 
+                "micro": 5, 
+                "minor": 7, 
+                "releaselevel": "final", 
+                "serial": 0
+            }, 
+            "version_info": [
+                2, 
+                7, 
+                5, 
+                "final", 
+                0
+            ]
+        }, 
+        "ansible_python_version": "2.7.5", 
+        "ansible_real_group_id": 1000, 
+        "ansible_real_user_id": 1000, 
+        "ansible_selinux": {
+            "status": "disabled"
+        }, 
+        "ansible_selinux_python_present": true, 
+        "ansible_service_mgr": "systemd", 
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEyVgEeXV1HTAPLrB0GsJ231hqJTjIlkmY/St4nexi8rThAQW3PrgMwV9v6XfZzruYK5RsfcOvdPY2Llwx/bafA=", 
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAINzcDu7JiRFJQ9lQxhdF56Z3jwQLfo/sMYiaYCv+DcGd", 
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDoir3h+U4hFSJJ6G9FmYwToPlMCws4GmpyU70kkVYB1iqBX3IJQsaM0nCJmWCw0dZ6IphiCMnCgSHhL2GFHxGvPPBd2XQ8KeO3kAIb9vy/O395Q9IdEEM0VFpBN+d3zIHCD2tlKK/e1csgCN87DPrwwVCZP+7aEqz3JXyNyFPrH0WUK1q8NoxjWrnSrjui2M8ZbsKcn6UHX82Ej2Sm4Z1hvAEYElWGrAhOcA9+HEINA5pw0DPcHQCEYCpyMi2LsSHPLIFf0GV1/IWz2RcEgBBsQqnfl0jZrYAzd+NCV/yToUOGahx/K5WOLdaDQ2dMkIjxYop37/9vFS/QkLs4J9rl", 
+        "ansible_system": "Linux", 
+        "ansible_system_capabilities": [
+            "cap_chown", 
+            "cap_dac_override", 
+            "cap_dac_read_search", 
+            "cap_fowner", 
+            "cap_fsetid", 
+            "cap_kill", 
+            "cap_setgid", 
+            "cap_setuid", 
+            "cap_setpcap", 
+            "cap_linux_immutable", 
+            "cap_net_bind_service", 
+            "cap_net_broadcast", 
+            "cap_net_admin", 
+            "cap_net_raw", 
+            "cap_ipc_lock", 
+            "cap_ipc_owner", 
+            "cap_sys_chroot", 
+            "cap_sys_ptrace", 
+            "cap_sys_admin", 
+            "cap_sys_boot", 
+            "cap_sys_nice", 
+            "cap_sys_resource", 
+            "cap_sys_tty_config", 
+            "cap_mknod", 
+            "cap_lease", 
+            "cap_audit_write", 
+            "cap_setfcap+i"
+        ], 
+        "ansible_system_capabilities_enforced": "True", 
+        "ansible_user_dir": "/home/select", 
+        "ansible_user_gecos": "", 
+        "ansible_user_gid": 1000, 
+        "ansible_user_id": "select", 
+        "ansible_user_shell": "/bin/bash", 
+        "ansible_user_uid": 1000, 
+        "ansible_userspace_architecture": "x86_64", 
+        "ansible_userspace_bits": "64", 
+        "gather_subset": [
+            "min"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+kolohome | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 8.8.8.8 port 22: Connection timed out\r\n", 
+    "unreachable": true
+}
+scada | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 8.8.4.4 port 22: Connection timed out\r\n", 
+    "unreachable": true
+}
+olga | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 8.8.8.8 port 22: Connection timed out\r\n", 
+    "unreachable": true
+}

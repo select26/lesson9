@@ -1,0 +1,4 @@
+---
+- name: install/upgrade zookeeper
+  package: name={{ item }} state=present update_cache=yes
+  with_items: "{{ service.zookeeper.packages | default([]) }}"

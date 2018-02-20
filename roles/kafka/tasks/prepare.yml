@@ -1,0 +1,13 @@
+---
+- name: add yum repositories
+  yum_repository: name="{{ item.key }}"
+   description="{{ item.value.description }}"
+   file="{{ item.key }}"
+   baseurl="{{ item.value.url }}"
+   gpgcheck=no
+   enabled=yes
+  with_dict: "{{ service.kafka.repositories }}"
+ 
+- name: install/upgrade prerequisites
+  package: name={{ item }} state=present update_cache=yes
+  with_items: "{{ service.kafka.prerequisites | default([]) }}"

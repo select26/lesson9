@@ -1,0 +1,8 @@
+---
+#Ping random host from group locals
+- hosts: "{{ groups['locals'] | shuffle }}"
+  gather_facts: no
+  tasks:
+   - name: simple ping ..
+     ping:
+     run_once: true

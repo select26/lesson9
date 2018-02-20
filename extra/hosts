@@ -1,0 +1,15 @@
+# This is the default ansible 'hosts' file.
+#
+# It should live in /etc/ansible/hosts
+#
+#   - Comments begin with the '#' character
+#   - Blank lines are ignored
+#   - Groups of hosts are delimited by [header] elements
+#   - You can enter hostnames or ip addresses
+#   - A hostname/ip can be a member of multiple groups
+[locals]
+olga	ansible_host=8.8.8.8
+scada	ansible_host=8.8.4.4
+#kolobook	ansible_ssh_host=127.1	ansible_ssh_user=select
+kolohome	ansible_host=8.8.8.8
+rt4	ansible_host=127.1

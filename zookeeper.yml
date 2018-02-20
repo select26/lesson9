@@ -1,0 +1,4 @@
+---
+ - hosts: sample
+   roles:
+     - role: zookeeper

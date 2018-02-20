@@ -1,0 +1,4 @@
+---
+- name: install/upgrade kafka service
+  package: name={{ item }} state=present update_cache=yes
+  with_items: "{{ service.kafka.packages | default([]) }}"

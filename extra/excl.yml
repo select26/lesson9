@@ -1,0 +1,8 @@
+---
+#Ping all hosts exclude host kolohome
+- hosts: all:!kolohome
+  gather_facts: no
+  tasks:
+   - name: simple ping ..
+     ping:
+#     run_once: true

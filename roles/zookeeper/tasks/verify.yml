@@ -1,0 +1,14 @@
+---
+- name: Check if ZooKeeper is running
+  shell: ps ax | grep zoo | grep -v grep
+  ignore_errors: yes
+  changed_when: false
+  register: service_apache_status
+
+- name: Report status of ZooKeeper
+  fail:
+    msg: |
+      Service ZooKeeper is not running!
+      Return code from `grep`:
+      {{ service_apache_status.rc }}
+  when: service_apache_status.rc != 0
