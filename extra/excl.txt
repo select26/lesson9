@@ -1,0 +1,15 @@
+select@host:~/ansible_pb$ ansible-playbook excl.yml -i hosts 
+
+PLAY [all:!kolohome] ****************************************************************************************************
+
+TASK [simple ping ..] ***************************************************************************************************
+ok: [scada]
+ok: [olga]
+ 
+ ok: [rt4]
+ 
+ PLAY RECAP **************************************************************************************************************
+ olga                       : ok=1    changed=0    unreachable=0    failed=0   
+ rt4                        : ok=1    changed=0    unreachable=0    failed=0   
+ scada                      : ok=1    changed=0    unreachable=0    failed=0   
+ 
